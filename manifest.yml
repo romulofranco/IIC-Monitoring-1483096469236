@@ -1,0 +1,11 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: IIC Monitoring
+  host: IIC-Monitoring
+  disk_quota: 1024M
+  services:
+  - IIC Monitoring-cloudantNoSQLDB
+  - availability-monitoring-auto
